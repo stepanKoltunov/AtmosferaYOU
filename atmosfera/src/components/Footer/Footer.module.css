@@ -1,0 +1,13 @@
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+@media (max-width: 1050px) {
+    .footerContainer {
+        justify-content: center;
+        align-items: center;
+    }
+}

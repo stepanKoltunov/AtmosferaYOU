@@ -53,7 +53,7 @@ const Header = () => {
                 {/* Логотип */}
                 <Link href="/" className="flex items-center">
                     <Image
-                        src={'/icon.svg'}
+                        src={'/icon.png'}
                         alt={'Логотип atmosfera you'}
                         width={100}
                         height={100}
@@ -79,7 +79,6 @@ const Header = () => {
                     </nav>
                 )}
 
-                {/* Бургер-меню для мобильных */}
                 {isMobile && (
                     <button
                         onClick={toggleMenu}
@@ -96,7 +95,6 @@ const Header = () => {
                 )}
             </div>
 
-            {/* Мобильное меню с анимацией */}
             {isMobile && (
                 <div
                     ref={menuRef}

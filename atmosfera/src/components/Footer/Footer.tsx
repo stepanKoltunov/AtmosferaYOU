@@ -1,30 +1,33 @@
+import styles from "./Footer.module.css"
+import buttonStyles from "../../styles/ButtonDefault.module.css"
+
+import { CircleCheckBig } from 'lucide-react'
+
 const Footer = () => {
     return (
-        <footer className="bg-lime-50 border-t border-lime-200 mt-auto">
+        <footer className="bg-gradient-to-r from-lime-100 to-lime-200 border-t border-lime-200 mt-auto rounded-t-3xl">
             <div className="container mx-auto px-4 py-8">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {/* Контактная информация */}
                     <div className="text-center md:text-left">
-                        <h3 className="text-lg font-semibold text-lime-800 mb-4">Контактная информация</h3>
-                        <p className="text-lime-700 mb-2">
-                            <strong>Телефон:</strong> <a href={'tel:+79112405008'} >+7(911)240-5008</a>
+                        <h3 className="text-lg font-semibold text-lime-900 mb-4">Контактная информация</h3>
+                        <p className="text-lime-900 mb-2">
+                            <strong>Телефон:</strong> <a  className="hover:text-lime-500  transition-colors duration-300" href={'tel:+79112405008'} >+7(911)240-5008</a>
                         </p>
-                        <p className="text-lime-700">
+                        <p className="text-lime-900">
                             <strong>Юлия Муратшина</strong>
                             <br />
                             <span className="text-sm">Поддержка оставаться в ЗДОРОВОМ РЕСУРСЕ: коучинг, консалтинг, арт-терапия</span>
                         </p>
                     </div>
 
-                    {/* Социальные сети */}
-                    <div className="text-start">
+                    <div className={styles.footerContainer}>
                         <h3 className="text-lg font-semibold text-lime-800 mb-4">Свяжитесь со мной</h3>
                         <div className="flex justify-center md:justify-start space-x-4">
                             <a
                                 href="https://t.me/ullla29"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-lime-100 hover:bg-lime-200 text-lime-700 p-3 rounded-full transition-colors duration-300 flex items-center justify-center"
+                                className="border-lime-200 hover:border-lime-300 border-2 bg-lime-100 hover:bg-lime-200 text-lime-900 p-3 rounded-full transition-colors duration-300 flex items-center justify-center"
                                 aria-label="Telegram"
                             >
                                 <svg
@@ -40,7 +43,7 @@ const Footer = () => {
                                 href="https://wa.me/79112405008"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-lime-100 hover:bg-lime-200 text-lime-700 p-3 rounded-full transition-colors duration-300 flex items-center justify-center"
+                                className="border-lime-200 hover:border-lime-300 border-2 bg-lime-100 hover:bg-lime-200 text-lime-900 p-3 rounded-full transition-colors duration-300 flex items-center justify-center"
                                 aria-label="WhatsApp"
                             >
                                 <svg
@@ -55,29 +58,20 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    {/* Пройти тест */}
-                    <div className="items-start md:text-start">
+                    <div className={styles.footerContainer}>
                         <h3 className="text-lg font-semibold text-lime-800 mb-4">Пройти тест</h3>
                         <a
                             href="https://t.me/AtmosferaYouBot"
-                            className="inline-flex items-center bg-lime-500 hover:bg-lime-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-300"
+                            className={buttonStyles.buttonDefault}
                         >
                             <span>Начать тестирование</span>
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                fill="currentColor"
-                                className="w-5 h-5 ml-2"
-                            >
-                                <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 19l-5-5 1.41-1.41 3.59 3.58 7.59-7.59 1.41 1.42-9 9z" />
-                            </svg>
+                            <CircleCheckBig />
                         </a>
                     </div>
                 </div>
 
-                {/* Нижняя часть футера */}
-                <div className="border-t border-lime-200 mt-8 pt-6 text-center">
-                    <p className="text-lime-600 text-sm">
+                <div className="border-t border-white mt-8 pt-6 text-center">
+                    <p className="text-lime-900 text-sm">
                         © {new Date().getFullYear()} Все права защищены.
                     </p>
                 </div>

@@ -7,7 +7,7 @@ export const PAGES: NavItem[] = [
         path: '/',
     },
     {
-        name: 'О нас',
+        name: 'Обо мне',
         path: '/about',
     },
     {

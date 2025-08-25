@@ -6,9 +6,9 @@ import {Montserrat} from 'next/font/google'
 //todo
 export const metadata: Metadata = {
     icons: {
-        icon: '/icon.png', // Путь от корня (public/)
-        shortcut: '/icon.png',
-        apple: '/icon.png', // Для Apple устройств
+        icon: './icon.png', // Путь от корня (public/)
+        shortcut: './icon.png',
+        apple: './icon.png', // Для Apple устройств
     },
 }
 

@@ -10,9 +10,6 @@ export default function NotFound() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-lime-50 to-emerald-100 flex items-center justify-center px-4">
             <div className="max-w-lg w-full text-center">
-                {/*<div className="inset-0 flex items-center justify-center rounded-b-full bg-white">*/}
-                {/*    <Image src={'/avocado.jpg'} alt={'картинка 404 ошибки'} width={250} height={250} />*/}
-                {/*</div>*/}
 
                 {/* Текст */}
                 <h1 className="text-8xl font-bold text-lime-700 mb-4">404</h1>

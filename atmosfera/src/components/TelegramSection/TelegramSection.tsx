@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { MessageCircle, Brain, Heart, Star, Send } from 'lucide-react';
+import {MessageCircle, Brain, Heart, Star, Send, Frown} from 'lucide-react';
 import { Inter } from 'next/font/google';
 import styles from './TelegramSection.module.css';
 
@@ -14,15 +14,19 @@ const inter = Inter({
 const benefits = [
     {
         icon: <Brain size={24} />,
-        text: "Быстрые психологические тесты для самопознания"
+        text: "Выгорание"
     },
     {
         icon: <Heart size={24} />,
-        text: "Оценка ментального состояния от профессионального психолога"
+        text: "Пищеварительная система"
     },
     {
         icon: <Star size={24} />,
-        text: "Персональные рекомендации для улучшения самочувствия"
+        text: "Образ жизни"
+    },
+    {
+        icon: <Frown size={24} />,
+        text: "Стресс"
     }
 ];
 
@@ -45,7 +49,6 @@ export default function TelegramSection() {
                             Перейдите в наш Telegram-бот и пройдите тестирование для оценки вашего состояния
                         </p>
                     </div>
-
                     <div
                         className={styles.telegramBlock}
                         onClick={handleTelegramClick}
@@ -53,12 +56,13 @@ export default function TelegramSection() {
                         onMouseLeave={() => setIsHovered(false)}
                     >
                         <div className={`${styles.telegramIcon} ${isHovered ? styles.hovered : ''}`}>
-                            <MessageCircle size={36} />
-                            <Send size={16} className={styles.sendIcon} />
+                            <MessageCircle size={36}/>
+                            <Send size={16} className={styles.sendIcon}/>
                         </div>
                         <span className={styles.telegramText}>Перейти в бота</span>
                     </div>
                 </div>
+                <h3 className={styles.benefitTitle}>Наши тесты:</h3>
 
                 <div className={styles.benefits}>
                     {benefits.map((benefit, index) => (

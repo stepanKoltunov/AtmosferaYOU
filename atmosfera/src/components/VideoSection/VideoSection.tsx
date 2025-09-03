@@ -65,11 +65,9 @@ export default function VideoSection() {
                         </button>
 
                         <div className={styles.videoContainer}>
-                            <iframe src="https://vkvideo.ru/video_ext.php?oid=-227203050&id=456239087&hd=2&autoplay=1"
-                                    width="853" height="480"
-                                    allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
-                                    frameBorder="0" allowFullScreen
-                            ></iframe>
+                            <iframe width="720" height="405"
+                                    src="https://rutube.ru/play/embed/6a4e4b9b2e8104f830def1b4577045d9/?skinColor=3949ab"
+                                    ></iframe>
                         </div>
                     </div>
                 </div>

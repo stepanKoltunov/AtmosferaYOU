@@ -21,7 +21,7 @@ export default function HeroSection() {
                 <div className={styles.content}>
 
                     <div className={styles.expertBadge}>
-                        <span className={styles.expertText}>ЭКСПЕРТ – ПРАКТИК</span>
+                        <span className={styles.expertText}>КОУЧ: Мотивация на изменения</span>
                     </div>
 
                     <h1 className={styles.name}>Юлия Муратшина</h1>

@@ -15,10 +15,6 @@ export const PAGES: NavItem[] = [
         path: '/services',
     },
     {
-        name: 'Формат работы',
-        path: '/format',
-    },
-    {
         name: 'Отзывы',
         path: '/reviews',
     },
